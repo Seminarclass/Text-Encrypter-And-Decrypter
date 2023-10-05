@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Text Encrypter/Decrypter</h1>
+    <input type="file" id="fileInput" accept=".txt,.json,.js">
+    <textarea id="inputText" placeholder="Enter text to encrypt"></textarea>
+    
+   <input type="number" id="shiftValue" placeholder="Enter shift value" min="1" value="1">
+
+   
+    <button id="encryptButton">Encrypt</button>
+    <button id="decryptButton">Decrypt</button>
+    <button id="copyButton">Copy</button>
+    
+    <select id="formatSelect">
+        <option value="txt">Text</option>
+        <option value="json">JSON</option>
+        <option value="js">JavaScript</option>
+        <option value="other">Other (enter your own)</option>
+    </select>
+    
+    <input type="text" id="customFormat" placeholder="Enter custom format" style="display: none;">
+    
+    <button id="downloadButton" style="display: none;">Download</button>
+    <p id="outputText"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
